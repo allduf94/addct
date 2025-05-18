@@ -1,0 +1,109 @@
+#Login {
+  height: calc(100vh - 60px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+
+  .left {
+    background: url(https://buly.kr/YeG4wJ) center/cover no-repeat;
+  }
+
+  .right {
+    border-left: 1px solid #000;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    .title {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 60px;
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .wrap_checkbox {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+        font-size: 16px;
+
+        input[type="checkbox"] {
+          width: 16px;
+        }
+      }
+
+      input:not([type="checkbox"]), button {
+        height: 44px;
+        display: grid;
+        place-items: center;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        padding-left: 10px;
+        font-size: 16px;
+        border: 1px solid #aaa;
+      }
+
+      button {
+        font-size: 16px;
+
+        &.login {
+          color: #fff;
+          background-color: #000;
+        }
+
+        &.kakao {
+          background-color: #f9e000;
+        }
+
+        &.naver {
+          color: #fff;
+          background-color: #03c75a;
+        }
+      }
+    }
+
+    .wrap_find {
+      margin-top: 40px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      button {
+        flex: 1;
+
+        &:nth-child(1) {
+          text-align: right;
+        }
+
+        &:nth-child(2) {
+          text-align: left;
+        }
+      }
+    }
+
+    .signin,
+    .inquiry {
+      margin-top: 40px;
+      font-size: 16px;
+      display: grid;
+      place-items: center;
+    }
+
+    .signin {
+      height: 44px;
+      border: 1px solid #000;
+    }
+
+    .inquiry {
+      margin-top: 40px;
+      border: none;
+    }
+  }
+}
