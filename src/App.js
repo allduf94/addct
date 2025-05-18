@@ -24,13 +24,13 @@ function App() {
         <Header />
         <Routes>
           <Route path="/addct" element={<Home />} />
-          <Route path="/all" element={<All />} />
-          <Route path="/brand" element={<Brand />} />
-          <Route path="/note" element={<Note />} />
-          <Route path="/storelist" element={<Storelist />} />
-          <Route path="/detail" element={<Detail />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/addct/all" element={<All />} />
+          <Route path="/addct/brand" element={<Brand />} />
+          <Route path="/addct/note" element={<Note />} />
+          <Route path="/addct/storelist" element={<Storelist />} />
+          <Route path="/addct/detail" element={<Detail />} />
+          <Route path="/addct/cart" element={<Cart />} />
+          <Route path="/addct/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>
